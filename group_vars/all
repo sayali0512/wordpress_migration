@@ -1,3 +1,21 @@
+{{storage_dir_path}} : /home/azureadmin/storage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Disable All Updates
 # By default automatic updates are enabled, set this value to true to disable all automatic updates
 auto_up_disable: true
