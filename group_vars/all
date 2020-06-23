@@ -1,0 +1,91 @@
+# Disable All Updates
+# By default automatic updates are enabled, set this value to true to disable all automatic updates
+auto_up_disable: true
+
+# user_name and domain_name values are updated at runtime with user input
+server_hostname: wordpress
+src_domain_name: lb-3lvmnp.eastus.cloudapp.azure.com
+tar_domain_name: lb-yw23wf.eastus.cloudapp.azure.com
+user_name: azureadmin
+vm_password: iTalent@27
+vm_ip: 52.188.211.243
+dns_name: domain
+wp_db_server_name_src: mysql-3lvmnp.mysql.database.azure.com
+wp_db_user_src: dbadmin@mysql-3lvmnp
+wp_db_password_src: iTalent@27
+wp_db_name_src: wordpress
+wp_db_name_tar_new: wordpress22
+
+
+
+wp_db_server_name_tar: mysql-yw23wf.mysql.database.azure.com
+wp_db_user_tar: dbadmin@mysql-yw23wf
+wp_db_password_tar: iTalent@27
+wp_db_name_tar: wordpress
+
+
+
+
+# Password will be auto generated
+wp_admin_password: LiRxE7cg
+wp_db_user_pass: rzmY0su_
+
+wordpress_dir: wordpress
+wp_title: LAMP-WordPress
+wp_admin_user: admin
+wp_admin_email: test@microsoft.com
+wp_db_user_id: wordpress
+
+# Disable All Updates
+# By default automatic updates are enabled, set this value to true to disable all automatic updates
+auto_up_disable: true
+
+# Define Core Update Level
+# true  = Development, minor, and major updates are all enabled
+# false = Development, minor, and major updates are all disabled
+# minor = Minor updates are enabled, development, and major updates are disabled
+core_update_level: true
+
+# WordPress Latest Version
+# If you want to update wordpress to latest version then update sha1sum value from https://wordpress.org/download/releases/
+wp_version: 5.4.2
+woocommerce_version: 4.2.0
+wp_sha1sum: e5631f812232fbd45d3431783d3db2e0d5670d2d
+
+# Default_paths
+default_permission: www-data
+woocommerce_script_name: woocommerce.sh
+replication_name: replication.sh
+
+webroot: /var/www/html
+wordpress_path: /tmp/wordpress
+
+post_type: post,page,attachment,revision,nav_menu_item,custom_css,customize_changeset,oembed_cache,user_request,wp_block
+file_format: wordpress.xml
+
+src_wordpress_path: /azlamp/html/{{src_domain_name}}
+tar_wordpress_path: /azlamp/html/{{tar_domain_name}}
+
+xml_path: /tmp/wp-xml
+
+#defaultpath
+default_permission: www-data
+webroot: /var/www/html
+wordpress_url: https://wordpress.org/wordpress
+wordpress_path: /tmp/wordpress
+wp_salt_path: https://api.wordpress.org/secret-key/1.1/salt/
+
+
+
+
+wordpress_url: https://wordpress.org/wordpress
+wp_salt_path: https://api.wordpress.org/secret-key/1.1/salt/
+wp_cli_url: https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+woocommerce_plugin_url: https://downloads.wordpress.org/plugin/woocommerce.
+woocommerce_url: https://raw.githubusercontent.com/sayali0512/ansible-script/master/woocommerce.sh
+replication_url: https://raw.githubusercontent.com/sayali0512/ansible-script/master/replication.sh
+wordpressimporter_url: https://raw.githubusercontent.com/sayali0512/ansible-script/master/wordpressimporter.sh
+sql_dump_url: https://raw.githubusercontent.com/sayali0512/ansible-script/master/sql_dump.sh
+sql_dump_script_name: sql_dump.sh
+wordpress_importer_script_name: wordpressimporter.sh
+
