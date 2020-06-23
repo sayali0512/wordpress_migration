@@ -1,3 +1,41 @@
+storage_dir_path: /home/azureadmin/storage
+source_dns_name: lb-3lvmnp.eastus.cloudapp.azure.com
+target_dns_name: lb-yw23wf.eastus.cloudapp.azure.com
+target_info: https://raw.githubusercontent.com/sayali0512/ansible-script/master/updatetargetinfo.sh
+target_info_script_name: updatetargetinfo.sh
+
+
+
+source_db_server_name: mysql-3lvmnp.mysql.database.azure.com
+source_db_login_name: dbadmin@mysql-3lvmnp
+source_db_pass: iTalent@27
+source_db_name: wordpress
+new_db: wordpress22
+
+
+
+target_db_server_name: mysql-yw23wf.mysql.database.azure.com
+target_db_login_name: dbadmin@mysql-yw23wf
+target_db_pass: iTalent@27
+target_db_name: wordpress
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Disable All Updates
 # By default automatic updates are enabled, set this value to true to disable all automatic updates
 auto_up_disable: true
@@ -10,18 +48,18 @@ user_name: azureadmin
 vm_password: iTalent@27
 vm_ip: 52.188.211.243
 dns_name: domain
-wp_db_server_name_src: mysql-3lvmnp.mysql.database.azure.com
-wp_db_user_src: dbadmin@mysql-3lvmnp
-wp_db_password_src: iTalent@27
-wp_db_name_src: wordpress
-wp_db_name_tar_new: wordpress22
+source_db_server_name: mysql-3lvmnp.mysql.database.azure.com
+source_db_login_name: dbadmin@mysql-3lvmnp
+source_db_pass: iTalent@27
+source_db_name: wordpress
+new_db: wordpress22
 
 
 
-wp_db_server_name_tar: mysql-yw23wf.mysql.database.azure.com
-wp_db_user_tar: dbadmin@mysql-yw23wf
-wp_db_password_tar: iTalent@27
-wp_db_name_tar: wordpress
+target_db_server_name: mysql-yw23wf.mysql.database.azure.com
+target_db_login_name: dbadmin@mysql-yw23wf
+target_db_pass: iTalent@27
+target_db_name: wordpress
 
 
 
